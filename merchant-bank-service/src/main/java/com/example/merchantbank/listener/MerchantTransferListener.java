@@ -1,6 +1,6 @@
 package com.example.merchantbank.listener;
 
-import com.example.merchantbank.dto.PaymentRequest;
+import com.example.shared.dto.PaymentRequest;
 import com.example.merchantbank.entity.Merchant;
 import com.example.merchantbank.repository.MerchantRepository;
 import org.springframework.jms.annotation.JmsListener;

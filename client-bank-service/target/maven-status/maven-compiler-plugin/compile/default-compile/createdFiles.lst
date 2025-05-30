@@ -1,5 +1,5 @@
 com/example/clientbank/entity/Client.class
 com/example/clientbank/ClientBankServiceApplication.class
+com/example/shared/dto/PaymentRequest.class
 com/example/clientbank/repository/ClientRepository.class
 com/example/clientbank/listener/FundsVerificationListener.class
-com/example/clientbank/dto/PaymentRequest.class

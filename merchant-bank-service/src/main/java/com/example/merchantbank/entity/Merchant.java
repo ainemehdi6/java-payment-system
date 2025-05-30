@@ -14,7 +14,6 @@ public class Merchant {
     private String name;
     private BigDecimal balance;
 
-    // Getters
     public String getId() {
         return id;
     }

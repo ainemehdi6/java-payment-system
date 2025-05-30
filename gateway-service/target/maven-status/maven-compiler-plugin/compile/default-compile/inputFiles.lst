@@ -1,3 +1,4 @@
+/home/elmehdi/perso/JAVA/gateway-service/src/main/java/com/example/shared/dto/PaymentRequest.java
 /home/elmehdi/perso/JAVA/gateway-service/src/main/java/com/example/gateway/GatewayServiceApplication.java
 /home/elmehdi/perso/JAVA/gateway-service/src/main/java/com/example/gateway/controller/PaymentController.java
-/home/elmehdi/perso/JAVA/gateway-service/src/main/java/com/example/gateway/dto/PaymentRequest.java
+/home/elmehdi/perso/JAVA/gateway-service/src/main/java/com/example/gateway/config/JmsConfig.java

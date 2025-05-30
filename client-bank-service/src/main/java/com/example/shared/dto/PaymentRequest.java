@@ -1,4 +1,4 @@
-package com.example.gateway.dto;
+package com.example.shared.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

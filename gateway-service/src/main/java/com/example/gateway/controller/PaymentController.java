@@ -4,7 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.web.bind.annotation.*;
-import com.example.gateway.dto.PaymentRequest;
+import com.example.shared.dto.PaymentRequest;
 
 @RestController
 @RequestMapping("/api/payments")

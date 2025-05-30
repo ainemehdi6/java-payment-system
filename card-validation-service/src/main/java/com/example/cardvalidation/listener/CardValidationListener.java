@@ -1,6 +1,6 @@
 package com.example.cardvalidation.listener;
 
-import com.example.cardvalidation.dto.PaymentRequest;
+import com.example.shared.dto.PaymentRequest;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.stereotype.Component;

@@ -1,3 +1,4 @@
 com/example/gateway/GatewayServiceApplication.class
-com/example/gateway/dto/PaymentRequest.class
 com/example/gateway/controller/PaymentController.class
+com/example/shared/dto/PaymentRequest.class
+JmsConfig.class

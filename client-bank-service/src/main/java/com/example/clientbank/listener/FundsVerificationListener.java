@@ -1,6 +1,6 @@
 package com.example.clientbank.listener;
 
-import com.example.clientbank.dto.PaymentRequest;
+import com.example.shared.dto.PaymentRequest;
 import com.example.clientbank.entity.Client;
 import com.example.clientbank.repository.ClientRepository;
 import org.springframework.jms.annotation.JmsListener;
@@ -28,6 +28,9 @@ public class FundsVerificationListener {
         if (clientOpt.isPresent()) {
             Client client = clientOpt.get();
             if (client.getBalance().compareTo(BigDecimal.valueOf(request.getAmount())) >= 0) {
+                client.setBalance(client.getBalance().subtract(BigDecimal.valueOf(request.getAmount())));
+                clientRepository.save(client);
+
                 jmsTemplate.convertAndSend("funds.validated", request);
                 System.out.println("✅ Fonds validés pour : " + request.getPaymentId());
             } else {

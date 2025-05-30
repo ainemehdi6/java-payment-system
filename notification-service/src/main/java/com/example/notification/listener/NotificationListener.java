@@ -1,11 +1,17 @@
 package com.example.notification.listener;
 
-import com.example.notification.dto.PaymentRequest;
+import com.example.shared.dto.PaymentRequest;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Component;
+import jakarta.annotation.PostConstruct;
 
 @Component
 public class NotificationListener {
+
+    @PostConstruct
+    public void init() {
+        System.out.println("🔔 NotificationListener initialisé");
+    }
 
     @JmsListener(destination = "payment.processed")
     public void onPaymentSuccess(PaymentRequest request) {
